@@ -38,9 +38,9 @@ def solve_lorenz(sigma=10.0, beta=8./3, rho=28.0):
     for i in range(N):
         x, y, z = x_t[i,:,:].T
         lines = ax.plot(x, y, z, '-', c=colors[i])
-        plt.setp(lines, linewidth=2)
+        plt.setp(lines, linewidth=1)
     angle = 104
-    ax.view_init(30, angle)
+  #  ax.view_init(50, angle)
     plt.show()
 
     return t, x_t
